@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+        /* Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px 50px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff69b4;
+        }
+        nav .logo {
+            font-size: 1.5rem;
+            color: #ff69b4;
+        }
+        /* Hero Section */
+        .hero-section {
+            height: 100vh;
+            background-image: url('Images/land2.png.webp');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        .hero-section h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .hero-section .cta-button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .hero-section .cta-button:hover {
+            background-color: #ff1493;
+        }
+        /* Features Section */
+        .features {
+            padding: 100px 50px;
+            text-align: center;
+        }
+        .features h2 {
+            font-size: 2.5rem;
+            color: #ff69b4;
+            margin-bottom: 50px;
+        }
+        .features .feature-box {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .features .box {
+            width: 30%;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        .features .box:hover {
+            transform: translateY(-10px);
+        }
+        .features h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .features p {
+            font-size: 1rem;
+            color: #555;
+        }
+        /* Footer */
+        footer {
+            background-color: #ffb6c1;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        footer p {
+            margin: 0;
+        }
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo">TechNova</div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section" id="home">
+    <h1>Welcome to TechNova</h1>
+    <p>Innovating the Future, One Step at a Time.</p>
+    <a href="#features"><button class="cta-button">Explore Features</button></a>
+</section>
+
+<!-- Features Section -->
+<section class="features" id="features">
+    <h2>Our Features</h2>
+    <div class="feature-box">
+        <div class="box">
+            <h3>Cutting-Edge Technology</h3>
+            <p>Experience the latest advancements with our state-of-the-art products designed to simplify your life.</p>
+        </div>
+        <div class="box">
+            <h3>User-Friendly Interface</h3>
+            <p>Navigate effortlessly through intuitive designs tailored for optimal user experience.</p>
+        </div>
+        <div class="box">
+            <h3>24/7 Customer Support</h3>
+            <p>Our dedicated support team is here to assist you any time, any day.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+    <p>Contact us at support@technova.com | © 2024 TechNova</p>
+</footer>
+
+</body>
+</html>
